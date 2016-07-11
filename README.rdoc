@@ -4,4 +4,4 @@ This project uses the star wars api from http://swapi.co/. It will also use the 
 
 == GEMS 
 
-
+Bootstrap, Semantic-UI, HTTParty
