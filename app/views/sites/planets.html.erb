@@ -1,0 +1,17 @@
+<h1>Planets</h1>
+
+<%= form_tag planets_path do %>
+  <div class="form-group">
+    <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
+    <%= submit_tag "Get Information", class: "btn btn-primary" %>
+<% end %>
+
+<p>name: <%= @name %></p>
+<p>Rotation_period: <%= @rotation_period %></p>
+<p>Orbital_Period: <%= @orbital_period %></p>
+<p>Diameter: <%= @diameter %></p>
+<p>Climate: <%= @climate %></p>
+<p>Gravity: <%= @gravity %></p>
+<p>Terrain: <%= @terrain %></p>
+<p>Surface Water: <%= @surface_water %></p>
+<p>Population: <%= @population %></p>

@@ -8,4 +8,35 @@ class SitesController < ApplicationController
     @producer = response['producer']
     @release_date = response['release_date']
   end
+
+  def people 
+    response = HTTParty.get("http://swapi.co/api/people/#{params[:number]}")
+    @name = response['name']
+    @height = response['height']
+    @mass = response['mass']
+    @hair_color = response['hair_color']
+    @skin_color = response['skin_color']
+    @eye_color = response['eye_color']
+    @birth_year = response['birth_year']
+    @gender = response['gender']
+  end
+
+  def planets
+    response = HTTParty.get("http://swapi.co/api/planets/#{params[:number]}")
+    @name = response['name']
+    @rotation_period = response['rotation_period']
+    @orbital_period = response['orbital_period']
+    @diameter = response['diameter']
+    @climate = response['climate']
+    @gravity = response['gravity']
+    @terrain = response['terrain']
+    @surface_water = response['surface_water']
+    @population = response['population']
+  end 
+
+  def species
+    response = HTTParty.get("http://swapi.co/api/species/#{params[:number]}")
+
+  end
+
 end

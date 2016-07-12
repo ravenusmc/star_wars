@@ -3,8 +3,13 @@ Rails.application.routes.draw do
   root 'welcome#home'
 
   get 'film' => 'sites#film'
-
   post 'film' => 'sites#film'
+
+  get 'people' => 'sites#people'
+  post 'people' => 'sites#people'
+
+  get 'planets' => 'sites#planets'
+  post 'planets' => 'sites#planets'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
