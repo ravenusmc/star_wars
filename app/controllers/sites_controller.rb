@@ -36,7 +36,16 @@ class SitesController < ApplicationController
 
   def species
     response = HTTParty.get("http://swapi.co/api/species/#{params[:number]}")
-
+    @name = response['name']
+    @classification = response['classification']
+    @designation = response['designation']
+    @average_height = response['average_height']
+    @skin_colors = response['skin_colors']
+    @hair_colors = response['hair_colors']
+    @eye_colors = response['eye_colors']
+    @average_lifespan = response['average_lifespan']
+    @homeworld = response['homeworld']
+    @language = response['language']
   end
 
 end

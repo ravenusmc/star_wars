@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   get 'planets' => 'sites#planets'
   post 'planets' => 'sites#planets'
+
+  get 'species' => 'sites#species'
+  post 'species' => 'sites#species'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

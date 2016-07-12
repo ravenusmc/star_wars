@@ -1,0 +1,21 @@
+<h1>Species</h1>
+
+<%= form_tag species_path do %>
+  <div class="form-group">
+    <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
+    <%= submit_tag "Get Information", class: "btn btn-primary" %>
+<% end %>
+
+<p>Name: <%= @name %></p>
+<p>Classification: <%= @classification %></p>
+<p>Designation: <%= @designation %></p>
+<p>Average Height: <%= @average_height %></p>
+<p>Skin Colors: <%= @skin_colors %></p>
+<p>Hair Colors: <%= @hair_colors %></p>
+<p>Eye Colors: <%= @eye_colors %></p>
+<p>Average Lifespan: <%= @average_lifespan %></p>
+<p>HomeWorld: <%= @homeworld %></p>
+<p>Language: <%= @language %></p>
+
+
+
