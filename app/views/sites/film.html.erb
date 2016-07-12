@@ -13,7 +13,7 @@
 <%= form_tag film_path do %>
   <div class="form-group">
     <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
-    <%= submit_tag "Get Information", class: "btn btn-primary" %>
+    <%= submit_tag "Get Information", class: "ui inverted teal button" %>
 <% end %>
 
 <p>Film: <%= @title %></p>
