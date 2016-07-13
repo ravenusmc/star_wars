@@ -1,0 +1,21 @@
+<h1>Starships</h1>
+
+<%= form_tag starships_path do %>
+  <div class="form-group">
+    <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
+    <%= submit_tag "Get Information", class: "ui inverted teal button" %>
+<% end %>
+
+<p>Name: <%= @name %></p>
+<p>Model: <%= @model %></p>
+<p>Manufacturer: <%= @manufacturer %></p>
+<p>Cost in Credits: <%= @cost_in_credits %></p>
+<p>Length: <%= @length %></p>
+<p>Max Atmosphering Speed: <%= @max_atmosphering_speed %></p>
+<p>Crew: <%= @crew %></p>
+<p>Passengers: <%= @passengers %></p>
+<p>Cargo Capacity: <%= @cargo_capacity %></p>
+<p>Consumables: <%= @consumables %></p>
+<p>Hyperdrive Rating: <%= @hyperdrive_rating %></p>
+<p>Starship Class: <%= @starship_class %></p>
+

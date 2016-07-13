@@ -48,4 +48,35 @@ class SitesController < ApplicationController
     @language = response['language']
   end
 
+  def vehicles 
+    response = HTTParty.get("http://swapi.co/api/vehicles/#{params[:number]}")
+    @name = response['name']
+    @model = response['model']
+    @manufacturer = response['manufacturer']
+    @cost_in_credits = response['cost_in_credits']
+    @length = response['length']
+    @max_atmosphering_speed = response['max_atmosphering_speed']
+    @crew = response['crew']
+    @passengers = response['passengers']
+    @cargo_capacity = response['cargo_capacity']
+    @consumables = response['consumables']
+    @vehicle_class = response['vehicle_class']
+  end
+
+  def starships
+    response = HTTParty.get("http://swapi.co/api/starships/#{params[:number]}")
+    @name = response['name']
+    @model = response['model']
+    @manufacturer = response['manufacturer']
+    @cost_in_credits = response['cost_in_credits']
+    @length = response['length']
+    @max_atmosphering_speed = response['max_atmosphering_speed']
+    @crew = response['crew']
+    @passengers = response['passengers']
+    @cargo_capacity = response['cargo_capacity']
+    @consumables = response['consumables']
+    @hyperdrive_rating = response['hyperdrive_rating']
+    @starship_class = response['starship_class']
+  end 
+
 end
