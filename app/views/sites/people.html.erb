@@ -1,16 +1,28 @@
-<h1>People</h1>
+<body id="peopleBody">
+  <div class="container top_elements">
+    <h1>People</h1>
 
-<%= form_tag people_path do %>
-  <div class="form-group">
-    <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
-    <%= submit_tag "Get Information", class: "ui inverted teal button" %>
-<% end %>
+    <%= form_tag people_path do %>
+      <div class="form-group">
+        <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
+        <%= submit_tag "Get Information", class: "ui inverted teal button" %>
+      </div>
+    <% end %>
+  </div>
 
-<p>name: <%= @name %></p>
-<p>Height: <%= @height %></p>
-<p>Mass: <%= @mass %></p>
-<p>Hair Color: <%= @hair_color %></p>
-<p>Skin Color: <%= @skin_color %></p>
-<p>Eye Color: <%= @eye_color %></p>
-<p>Birth Year: <%= @birth_year %></p>
-<p>Gender: <%= @gender %></p>
+  <div class="container center bottom_elements">
+    <h1>Requested Information:</h1>
+      <p class="font_fix">name: <%= @name %></p>
+      <p class="font_fix">Height: <%= @height %></p>
+      <p class="font_fix">Mass: <%= @mass %></p>
+      <p class="font_fix">Hair Color: <%= @hair_color %></p>
+      <p class="font_fix">Skin Color: <%= @skin_color %></p>
+      <p class="font_fix">Eye Color: <%= @eye_color %></p>
+      <p class="font_fix">Birth Year: <%= @birth_year %></p>
+      <p class="font_fix">Gender: <%= @gender %></p>
+  </div>
+
+</div>
+</body>
+
+

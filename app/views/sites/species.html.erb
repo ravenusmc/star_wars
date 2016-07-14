@@ -1,21 +1,29 @@
-<h1>Species</h1>
+<body id="speciesBody">
+  <div class="container top_elements">
+    <h1>Species</h1>
 
-<%= form_tag species_path do %>
-  <div class="form-group">
-    <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
-    <%= submit_tag "Get Information", class: "ui inverted teal button" %>
-<% end %>
+    <%= form_tag species_path do %>
+      <div class="form-group">
+        <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
+        <%= submit_tag "Get Information", class: "ui inverted teal button" %>
+      </div>
+    <% end %>
+  </div>
 
-<p>Name: <%= @name %></p>
-<p>Classification: <%= @classification %></p>
-<p>Designation: <%= @designation %></p>
-<p>Average Height: <%= @average_height %></p>
-<p>Skin Colors: <%= @skin_colors %></p>
-<p>Hair Colors: <%= @hair_colors %></p>
-<p>Eye Colors: <%= @eye_colors %></p>
-<p>Average Lifespan: <%= @average_lifespan %></p>
-<p>HomeWorld: <%= @homeworld %></p>
-<p>Language: <%= @language %></p>
+  <div class="container center bottom_elements">
+    <h1>Requested Information:</h1>
+      <p class="font_fix">Name: <%= @name %></p>
+      <p class="font_fix">Classification: <%= @classification %></p>
+      <p class="font_fix">Designation: <%= @designation %></p>
+      <p class="font_fix">Average Height: <%= @average_height %></p>
+      <p class="font_fix">Skin Colors: <%= @skin_colors %></p>
+      <p class="font_fix">Hair Colors: <%= @hair_colors %></p>
+      <p class="font_fix">Eye Colors: <%= @eye_colors %></p>
+      <p class="font_fix">Average Lifespan: <%= @average_lifespan %></p>
+      <p class="font_fix">HomeWorld: <%= @homeworld %></p>
+      <p class="font_fix">Language: <%= @language %></p>
+  </div>
 
-
+</div>
+</body>
 

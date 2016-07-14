@@ -1,17 +1,30 @@
-<h1>Planets</h1>
+<body id="planetsBody">
+  <div class="container top_elements">
+    <h1>Planets</h1>
 
-<%= form_tag planets_path do %>
-  <div class="form-group">
-    <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
-    <%= submit_tag "Get Information", class: "ui inverted teal button" %>
-<% end %>
+    <%= form_tag planets_path do %>
+      <div class="form-group">
+        <p><%= text_field_tag :number, nil, placeholder: "Integer", class: "form-control" %></p>
+        <%= submit_tag "Get Information", class: "ui inverted teal button" %>
+      </div>
+    <% end %>
+  </div>
 
-<p>name: <%= @name %></p>
-<p>Rotation_period: <%= @rotation_period %></p>
-<p>Orbital_Period: <%= @orbital_period %></p>
-<p>Diameter: <%= @diameter %></p>
-<p>Climate: <%= @climate %></p>
-<p>Gravity: <%= @gravity %></p>
-<p>Terrain: <%= @terrain %></p>
-<p>Surface Water: <%= @surface_water %></p>
-<p>Population: <%= @population %></p>
+  <div class="container center bottom_elements">
+    <h1>Requested Information:</h1>
+      <p class="font_fix">name: <%= @name %></p>
+      <p class="font_fix">Rotation_period: <%= @rotation_period %></p>
+      <p class="font_fix">Orbital_Period: <%= @orbital_period %></p>
+      <p class="font_fix">Diameter: <%= @diameter %></p>
+      <p class="font_fix">Climate: <%= @climate %></p>
+      <p class="font_fix">Gravity: <%= @gravity %></p>
+      <p class="font_fix">Terrain: <%= @terrain %></p>
+      <p class="font_fix">Surface Water: <%= @surface_water %></p>
+      <p class="font_fix">Population: <%= @population %></p>
+  </div>
+
+</div>
+</body>
+
+
+

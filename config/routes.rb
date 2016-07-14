@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'welcome#home'
 
+  get 'help' => "welcome#help"
+
   get 'film' => 'sites#film'
   post 'film' => 'sites#film'
 

@@ -1,18 +1,18 @@
 <body id="filmBody">
 <div class="container film">
 
-  <div class="container">
+  <div class="container top_elements">
     <h1>Films</h1>
 
-    <ol>
-    <li>Star Wars: A New Hope</li>
-    <li>Star Wars: The Empire Strikes Back</li>
-    <li>Star Wars: Return of the Jedi</li>
-    <li>Star Wars: The Phantom Menace</li>
-    <li>Star Wars: Attack of the Clones</li>
-    <li>Star Wars: Revenge of the Sith</li>
-    <li>Star Wars: The Force Awakens</li>
-    </ol>
+    <ul class="font_fix">
+      <li>1. Star Wars: A New Hope</li>
+      <li>2. Star Wars: The Empire Strikes Back</li>
+      <li>3. Star Wars: Return of the Jedi</li>
+      <li>4. Star Wars: The Phantom Menace</li>
+      <li>5. Star Wars: Attack of the Clones</li>
+      <li>6. Star Wars: Revenge of the Sith</li>
+      <li>7. Star Wars: The Force Awakens</li>
+    </ul>
 
     <%= form_tag film_path do %>
       <div class="form-group">
@@ -22,14 +22,15 @@
     <% end %>
   </div>
 
-  <div class="container center">
+  <div class="container center bottom_elements">
     <h1>Requested Information:</h1>
-    <p>Film: <%= @title %></p>
-    <p>Director: <%= @director %></p>
-    <p>Episode Number: <%= @episode_id %></p>
-    <p>Producer(s): <%= @producer %></p>
-    <p>Release Date: <%= @release_date %></p>
+    <p class="font_fix">Film: <%= @title %></p>
+    <p class="font_fix">Director: <%= @director %></p>
+    <p class="font_fix">Episode Number: <%= @episode_id %></p>
+    <p class="font_fix">Producer(s): <%= @producer %></p>
+    <p class="font_fix">Release Date: <%= @release_date %></p>
   </div>
 
 </div>
 </body>
+
