@@ -1,5 +1,13 @@
 class SitesController < ApplicationController
 
+    #My oh My quite a lot of not DRY code. I know, I know, I repeated myself a lot. I did not want.
+    #The main point of this site was really for me to start to work with an API on my own. 
+    #That is what I did with this project. I built it all myself without using any guides. 
+    #I only focused a little on the design aspect of it. Again, the main focus was to get good at 
+    #working with an API. If you want to fix this code then feel free to pull the code and work with 
+    #it. I also believe that I should be able to combine many of these actions since so many of the 
+    #properties repeat themselves. Well...now time to move onto anoher rails project...
+
   def film 
     response = HTTParty.get("http://swapi.co/api/films/#{params[:number]}")
     @title = response['title']

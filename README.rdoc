@@ -1,6 +1,6 @@
 == README
 
-This project uses the star wars api from http://swapi.co/. It will also use the HTTParty gem to make the request to the Star Wars API. I came upon this idea because I wanted more practice with API's and using them with rails. The intention of the site is that the user will have the capability to look at information about Star Wars-such as film information. 
+This project uses the star wars api from http://swapi.co/. It will also use the HTTParty gem to make the request to the Star Wars API. I came upon this idea because I wanted more practice with API's and using them with rails. The intention of the site is that the user will have the capability to look at information about Star Wars-such as film information. Project is for the most part finished.
 
 == GEMS 
 
